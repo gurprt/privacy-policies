@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TradeSignal — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the TradeSignal browser extension: no data collection, no accounts, no tracking.">
+<style>
+  :root {
+    color-scheme: light;
+    --surface: #fcfcfb; --surface-2: #f3f2ee; --ink: #0b0b0b; --ink-2: #52514e;
+    --muted: #7a7873; --hairline: #e1e0d9; --accent: #1c5cab; --good: #006300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --surface: #1a1a19; --surface-2: #242423; --ink: #ffffff; --ink-2: #c3c2b7;
+      --muted: #9a998f; --hairline: #2c2c2a; --accent: #6da7ec; --good: #7ddc7d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--surface); color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { border-bottom: 1px solid var(--hairline); padding-bottom: 20px; margin-bottom: 28px; }
+  h1 { font-size: 28px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  h2 { font-size: 19px; margin: 34px 0 10px; }
+  p, li { color: var(--ink-2); }
+  .updated { color: var(--muted); font-size: 14px; margin: 0; }
+  .lede {
+    background: var(--surface-2); border-radius: 10px; padding: 16px 18px; margin: 24px 0;
+    color: var(--ink); font-weight: 500;
+  }
+  .lede strong { color: var(--good); }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  th { color: var(--ink); font-size: 13px; }
+  code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  .scroll { overflow-x: auto; }
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--hairline); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>TradeSignal — Privacy Policy</h1>
+  <p class="updated">For the TradeSignal browser extension · Last updated 18 September 2026</p>
+</header>
+
+<p>TradeSignal is a trade journal, portfolio tracker, watchlist and news reader that runs entirely in
+your browser.</p>
+
+<p class="lede"><strong>We collect nothing.</strong> TradeSignal has no server, no account system, no
+analytics and no tracking. The developer cannot see your data.</p>
+
+<h2>What you create stays on your device</h2>
+<p>Your trades, notes, watchlist, price alerts, setups and settings are saved with the browser's
+extension storage on the computer where you installed the extension. They are never uploaded.</p>
+<ul>
+  <li>Settings sync between your own devices only if you have browser sync switched on. That is handled
+      by your browser, not by us.</li>
+  <li>Removing the extension deletes this data. Use <em>Dashboard → Import / export → Export JSON</em> to
+      keep a backup first.</li>
+</ul>
+
+<h2>Which servers the extension contacts</h2>
+<div class="scroll">
+<table>
+  <thead><tr><th>Service</th><th>What is sent</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>query1/query2.finance.yahoo.com</code></td>
+      <td>The ticker symbols in your watchlist, open trades and searches</td>
+      <td>Delayed prices, chart candles and symbol search</td>
+    </tr>
+    <tr>
+      <td><code>finance.yahoo.com</code>, <code>search.cnbc.com</code>, <code>feeds.content.dowjones.io</code>,
+          <code>www.nasdaq.com</code>, <code>www.investing.com</code></td>
+      <td>Nothing beyond the request itself</td>
+      <td>Public RSS news headlines</td>
+    </tr>
+    <tr>
+      <td><code>s.tradingview.com</code></td>
+      <td>The symbol you are charting</td>
+      <td>Draws the chart widget. TradingView may set its own cookies inside that frame, under their
+          own privacy policy</td>
+    </tr>
+    <tr>
+      <td><code>127.0.0.1</code> / <code>localhost</code></td>
+      <td>Nothing</td>
+      <td>Optional: reads signals from open-source software you can run yourself. Only used if you run it</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Requests carry the symbol you are looking at and ordinary browser request data, such as your IP
+address, which any website receives. No trades, notes or personal details are ever included.</p>
+<p>These third parties have their own privacy policies:
+<a href="https://legal.yahoo.com/us/en/yahoo/privacy/index.html">Yahoo</a> ·
+<a href="https://www.tradingview.com/policies/">TradingView</a> ·
+<a href="https://www.nbcuniversal.com/privacy">CNBC</a> ·
+<a href="https://www.dowjones.com/privacy-notice/">Dow Jones / MarketWatch</a> ·
+<a href="https://www.nasdaq.com/privacy-statement">Nasdaq</a> ·
+<a href="https://www.investing.com/about-us/privacy-policy">Investing.com</a>.</p>
+
+<h2>What the extension does not do</h2>
+<ul>
+  <li>It does not read, modify or inject anything into the web pages you visit. Text is saved as a note
+      only when you choose <em>“Save … as a trade note”</em> from the right-click menu.</li>
+  <li>It does not connect to any broker or trading platform, and it cannot place, change or cancel orders.</li>
+  <li>It does not sell, share or transfer data to anyone, because it never collects any.</li>
+</ul>
+
+<h2>Permissions</h2>
+<p><code>storage</code> (save your journal locally) · <code>alarms</code> (refresh prices on a timer) ·
+<code>notifications</code> (price alerts and risk-limit warnings) · <code>contextMenus</code> (right-click
+to save a note) · <code>commands</code> (keyboard shortcuts), plus access to the data sources listed above.</p>
+
+<h2>Children</h2>
+<p>TradeSignal is not directed at children under 13.</p>
+
+<h2>Changes</h2>
+<p>Any change to this policy will appear on this page with a new date, and in the extension's release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy? Please
+<a href="https://github.com/gurprt/tradesignal-privacy/issues">open an issue on GitHub</a>.</p>
+
+<footer>
+  TradeSignal is a personal research and journalling tool. It is not financial advice, and it never
+  places trades.
+</footer>
+
+</div>
+</body>
+</html>
