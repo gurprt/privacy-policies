@@ -6,8 +6,8 @@ Firefox Add-ons all require.
 
 **Published policies:**
 
-- TradeSignal: <https://gurprt.github.io/tradesignal-privacy/>
-- Hueberry: <https://gurprt.github.io/tradesignal-privacy/#hueberry>
+- TradeSignal: <https://gurprt.github.io/privacy-policies/>
+- Hueberry: <https://gurprt.github.io/privacy-policies/#hueberry>
 
 Each extension's source code is kept in a separate repository. Nothing here is part of either
 extension — this is only the policy page (`index.html`).
