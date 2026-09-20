@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TradeSignal — Privacy Policy</title>
-<meta name="description" content="Privacy policy for the TradeSignal browser extension: no data collection, no accounts, no tracking.">
+<title>Privacy Policies · TradeSignal &amp; Hueberry</title>
+<meta name="description" content="Privacy policies for the TradeSignal and Hueberry browser extensions: no data collection, no accounts, no tracking.">
 <style>
   :root {
     color-scheme: light;
@@ -24,9 +24,9 @@
     font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
-  header { border-bottom: 1px solid var(--hairline); padding-bottom: 20px; margin-bottom: 28px; }
+  header { border-bottom: 1px solid var(--hairline); padding-bottom: 20px; margin-bottom: 24px; }
   h1 { font-size: 28px; margin: 0 0 6px; letter-spacing: -0.01em; }
-  h2 { font-size: 19px; margin: 34px 0 10px; }
+  h3 { font-size: 18px; margin: 30px 0 10px; }
   p, li { color: var(--ink-2); }
   .updated { color: var(--muted); font-size: 14px; margin: 0; }
   .lede {
@@ -41,16 +41,82 @@
   a { color: var(--accent); }
   ul { padding-left: 20px; }
   .scroll { overflow-x: auto; }
-  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--hairline); color: var(--muted); font-size: 14px; }
+
+  /* ---- product picker ---- */
+  .picker { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 28px; }
+  .pick {
+    display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: center;
+    padding: 14px 16px; border: 1px solid var(--hairline); border-radius: 10px;
+    color: var(--ink); text-decoration: none; background: var(--surface);
+  }
+  .pick:hover { background: var(--surface-2); }
+  .pick:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pick b { font-size: 16px; }
+  .pick .desc { grid-column: 2; color: var(--muted); font-size: 14px; line-height: 1.4; }
+  .mark {
+    grid-row: span 2; width: 34px; height: 34px; border-radius: 8px;
+    display: grid; place-items: center;
+  }
+  .mark-ts { background: var(--surface-2); color: var(--accent); font: 700 13px/1 system-ui, sans-serif; letter-spacing: .02em; }
+  .mark img { width: 34px; height: 34px; }
+
+  /* ---- one dropdown per product ---- */
+  details.policy { border: 1px solid var(--hairline); border-radius: 12px; margin-bottom: 16px; background: var(--surface); scroll-margin-top: 16px; }
+  details.policy > summary {
+    display: flex; align-items: center; gap: 12px; padding: 16px 18px;
+    cursor: pointer; list-style: none;
+  }
+  details.policy > summary::-webkit-details-marker { display: none; }
+  .sum-text { display: grid; gap: 2px; min-width: 0; }
+  .sum-text h2 { font-size: 20px; margin: 0; letter-spacing: -0.01em; }
+  .sum-text small { color: var(--muted); font-size: 14px; }
+  .chev {
+    margin-left: auto; flex: 0 0 auto; width: 9px; height: 9px;
+    border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
+    transform: rotate(45deg); transition: transform .15s ease;
+  }
+  details[open] > summary .chev { transform: rotate(-135deg); }
+  .policy-body { padding: 0 18px 10px; border-top: 1px solid var(--hairline); }
+  .policy-body > p:first-child { margin-top: 18px; }
+  .note { color: var(--muted); font-size: 14px; border-top: 1px solid var(--hairline); padding-top: 14px; margin-top: 26px; }
+
+  footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--hairline); color: var(--muted); font-size: 14px; }
+  @media (prefers-reduced-motion: reduce) { .chev { transition: none; } }
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header>
-  <h1>TradeSignal — Privacy Policy</h1>
-  <p class="updated">For the TradeSignal browser extension · Last updated 18 September 2026</p>
+  <h1>Privacy Policies</h1>
+  <p class="updated">For the TradeSignal and Hueberry browser extensions. Choose one below.</p>
 </header>
+
+<nav class="picker" aria-label="Choose an extension">
+  <a class="pick" href="#tradesignal">
+    <span class="mark mark-ts" aria-hidden="true">TS</span>
+    <b>TradeSignal</b>
+    <span class="desc">Trade journal and portfolio tracker</span>
+  </a>
+  <a class="pick" href="#hueberry">
+    <span class="mark" aria-hidden="true"><img src="data:image/png;base64,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" alt=""></span>
+    <b>Hueberry</b>
+    <span class="desc">Color picker and eyedropper</span>
+  </a>
+</nav>
+
+<!-- Both dropdowns are open in the HTML so the full text is readable without scripts;
+     the script below collapses whichever one the address does not point at. -->
+
+<details class="policy" id="tradesignal" open>
+  <summary>
+    <span class="sum-text">
+      <h2>TradeSignal — Privacy Policy</h2>
+      <small>For the TradeSignal browser extension · Last updated 18 September 2026</small>
+    </span>
+    <span class="chev" aria-hidden="true"></span>
+  </summary>
+  <div class="policy-body">
 
 <p>TradeSignal is a trade journal, portfolio tracker, watchlist and news reader that runs entirely in
 your browser.</p>
@@ -58,7 +124,7 @@ your browser.</p>
 <p class="lede"><strong>We collect nothing.</strong> TradeSignal has no server, no account system, no
 analytics and no tracking. The developer cannot see your data.</p>
 
-<h2>What you create stays on your device</h2>
+<h3>What you create stays on your device</h3>
 <p>Your trades, notes, watchlist, price alerts, setups and settings are saved with the browser's
 extension storage on the computer where you installed the extension. They are never uploaded.</p>
 <ul>
@@ -68,7 +134,7 @@ extension storage on the computer where you installed the extension. They are ne
       keep a backup first.</li>
 </ul>
 
-<h2>Which servers the extension contacts</h2>
+<h3>Which servers the extension contacts</h3>
 <div class="scroll">
 <table>
   <thead><tr><th>Service</th><th>What is sent</th><th>Why</th></tr></thead>
@@ -108,7 +174,7 @@ address, which any website receives. No trades, notes or personal details are ev
 <a href="https://www.nasdaq.com/privacy-statement">Nasdaq</a> ·
 <a href="https://www.investing.com/about-us/privacy-policy">Investing.com</a>.</p>
 
-<h2>What the extension does not do</h2>
+<h3>What the extension does not do</h3>
 <ul>
   <li>It does not read, modify or inject anything into the web pages you visit. Text is saved as a note
       only when you choose <em>“Save … as a trade note”</em> from the right-click menu.</li>
@@ -116,26 +182,119 @@ address, which any website receives. No trades, notes or personal details are ev
   <li>It does not sell, share or transfer data to anyone, because it never collects any.</li>
 </ul>
 
-<h2>Permissions</h2>
+<h3>Permissions</h3>
 <p><code>storage</code> (save your journal locally) · <code>alarms</code> (refresh prices on a timer) ·
 <code>notifications</code> (price alerts and risk-limit warnings) · <code>contextMenus</code> (right-click
 to save a note) · <code>commands</code> (keyboard shortcuts), plus access to the data sources listed above.</p>
 
-<h2>Children</h2>
+<h3>Children</h3>
 <p>TradeSignal is not directed at children under 13.</p>
 
-<h2>Changes</h2>
+<h3>Changes</h3>
 <p>Any change to this policy will appear on this page with a new date, and in the extension's release notes.</p>
 
-<h2>Contact</h2>
+<h3>Contact</h3>
 <p>Questions about privacy? Please
 <a href="https://github.com/gurprt/tradesignal-privacy/issues">open an issue on GitHub</a>.</p>
 
+<p class="note">TradeSignal is a personal research and journalling tool. It is not financial advice, and it never
+  places trades.</p>
+  </div>
+</details>
+
+<details class="policy" id="hueberry" open>
+  <summary>
+    <span class="sum-text">
+      <h2>Hueberry — Privacy Policy</h2>
+      <small>For the Hueberry browser extension · Last updated 20 September 2026</small>
+    </span>
+    <span class="chev" aria-hidden="true"></span>
+  </summary>
+  <div class="policy-body">
+
+<p>Hueberry is a color picker that runs entirely in your browser. It samples a color from a web
+page, your screen or an image file, and shows it as HEX, RGB, RGBA and HSL.</p>
+
+<p class="lede"><strong>We collect nothing.</strong> Hueberry has no server, no account system, no
+analytics and no tracking, and it makes no network requests of any kind. The developer cannot see
+your data.</p>
+
+<h3>What stays on your device</h3>
+<p>The color you picked most recently and your last 16 picked colors are saved with the browser's
+extension storage on the computer where you installed the extension. They are never uploaded.</p>
+<ul>
+  <li><em>Clear history</em> in the popup erases the saved colors at any time.</li>
+  <li>Removing the extension deletes this data.</li>
+</ul>
+
+<h3>Which servers the extension contacts</h3>
+<p>None. Everything Hueberry needs ships inside the extension, so it works with no connection at
+all. It loads no remote code.</p>
+
+<h3>What the extension can see</h3>
+<ul>
+  <li><strong>Colors you pick.</strong> When you choose <em>Grab a color</em>, the browser's
+      eyedropper returns the color of the pixel you click. On browsers without that feature,
+      Hueberry takes a one-off image of the visible part of the current tab so you can click a
+      pixel in it. That image is used to read a single pixel, is held only in memory, and is
+      discarded as soon as you pick or cancel.</li>
+  <li><strong>Images you open.</strong> Files you drop, paste or choose are read inside the popup to
+      sample a pixel. They are never uploaded and never saved.</li>
+</ul>
+
+<h3>What the extension does not do</h3>
+<ul>
+  <li>It has no standing access to any website. It can act on a tab only at the moment you click
+      its toolbar button and start a pick.</li>
+  <li>It does not read, change or keep the content of the pages you visit.</li>
+  <li>It does not sell, share or transfer data to anyone, because it never collects any.</li>
+</ul>
+
+<h3>Permissions</h3>
+<p><code>activeTab</code> (capture the visible tab when you start a pick, on browsers without the
+built-in eyedropper) · <code>storage</code> (keep your current color and history locally) ·
+<code>scripting</code> (draw the crosshair overlay you click to choose a pixel). No host
+permissions are requested.</p>
+
+<h3>Children</h3>
+<p>Hueberry is not directed at children under 13.</p>
+
+<h3>Changes</h3>
+<p>Any change to this policy will appear on this page with a new date, and in the extension's release notes.</p>
+
+<h3>Contact</h3>
+<p>Questions about privacy? Please
+<a href="https://github.com/gurprt/tradesignal-privacy/issues">open an issue on GitHub</a>.</p>
+
+  </div>
+</details>
+
 <footer>
-  TradeSignal is a personal research and journalling tool. It is not financial advice, and it never
-  places trades.
+  Each extension is covered only by its own policy above. Neither extension shares data with the other.
 </footer>
 
 </div>
+
+<script>
+  // Open the policy the address points at (…/#hueberry or …/#tradesignal) and fold the other.
+  // With no address fragment, TradeSignal stays open, as this page has always shown it.
+  (function () {
+    var ids = ["tradesignal", "hueberry"];
+    function show() {
+      var want = location.hash.replace("#", "");
+      if (ids.indexOf(want) === -1) want = "tradesignal";
+      ids.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.open = (id === want);
+      });
+      if (location.hash) {
+        var target = document.getElementById(want);
+        if (target) target.scrollIntoView();
+      }
+    }
+    window.addEventListener("hashchange", show);
+    show();
+  })();
+</script>
 </body>
 </html>

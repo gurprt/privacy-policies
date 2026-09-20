@@ -1,11 +1,15 @@
-# TradeSignal — privacy policy
+# Privacy policies — TradeSignal and Hueberry
 
-This repository exists for one reason: to host the privacy policy for the **TradeSignal** browser
-extension at a public URL, which the Chrome Web Store, Edge Add-ons and Firefox Add-ons all require.
+This repository exists for one reason: to host the privacy policies for the **TradeSignal** and
+**Hueberry** browser extensions at a public URL, which the Chrome Web Store, Edge Add-ons and
+Firefox Add-ons all require.
 
-**Published policy:** <https://gurprt.github.io/tradesignal-privacy/>
+**Published policies:**
 
-The extension's source code is kept in a separate, private repository. Nothing here is part of the
-extension itself — this is only the policy page (`index.html`).
+- TradeSignal: <https://gurprt.github.io/tradesignal-privacy/>
+- Hueberry: <https://gurprt.github.io/tradesignal-privacy/#hueberry>
+
+Each extension's source code is kept in a separate repository. Nothing here is part of either
+extension — this is only the policy page (`index.html`).
 
 Questions about privacy: please open an issue on this repository.
